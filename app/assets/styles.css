@@ -13,15 +13,16 @@ body, h1, p {
 body {
     font-family: nunito, sans-serif;
     background-color: #f2f2f2;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
 }
 
 /* Create grid container */
 .container {
     display: grid;
     grid-template-columns: [content-start] auto [content-end];
-    grid-template-rows: [header-start] 100px [header-end content-start] auto [content-end footer-start];
+    grid-template-rows: [header-start] 1fr [header-end content-start] auto [content-end footer-start];
 }
 
 .header {
@@ -46,6 +47,15 @@ p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
+}
+
+a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333;
 }
 
 /* Nav bar */
@@ -84,5 +94,6 @@ nav a {
 nav a:hover {
     color: #666;
 }
+
 
 /* Footer */
