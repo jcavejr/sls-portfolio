@@ -19,8 +19,19 @@ body {
 
 /* Create grid container */
 .container {
-    display: flex;
-    grid-template-rows: [header-start] 100px [content-start] auto [content-end footer-start] 100px [footer-end];
+    display: grid;
+    grid-template-columns: [content-start] auto [content-end];
+    grid-template-rows: [header-start] 100px [header-end content-start] auto [content-end footer-start];
+}
+
+.header {
+    grid-column: content-start / content-end;
+    grid-row: header-start / header-end;
+}
+
+.content {
+    grid-column: content-start / content-end;
+    grid-row: content-start / content-end;
 }
 
 /* Style the heading */

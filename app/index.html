@@ -18,17 +18,18 @@
             </nav>
         </header>
         <div class="container">
-            <div class="header"></div>
-                <h1>Jeff Cave Jr</h1>
-                <p>Cloud Engineer</p>
-                <img src="images/jeff.jpg" alt="Jeff Cave Jr">
+            <div class="header">
+                <h1 class="header-title">Jeff Cave Jr</h1>
+                <p class="header-title">Cloud Engineer</p>
+                <img src="images/jeff.jpg" alt="Jeff Cave Jr" />
             </div>
             <div class="content">
                 <p>Hi, my name is Jeff and I am a Cloud Engineer.</p>
                 <p>I've designed and implemented many systems in AWS. I have
                     experience
                     with Terraform, Docker, and
-                    Github Actions. I am currently learning about Kubernetes and IoT
+                    Github Actions. I am currently learning about Kubernetes and
+                    IoT
                     devices.</p>
                 <p>My primary programming language is Python. I also have
                     professional
@@ -37,19 +38,46 @@
                 <div class="projects">
 
                     <h2>Projects</h2>
-                    <p>Here are some of the projects I've worked on:</p>
+                    <h3>Serverless Portfolio</h3>
+                    <p>This is a serverless portfolio that I built using AWS
+                        services. It is
+                        hosted on S3 and
+                        served through CloudFront. The code is stored in Github
+                        at <a
+                            href="https://github.com/jcavejr/serverless-portfolio">jcavejr/serverless-portfolio</a>.</p>
+                    <p>I intentionally chose to style the site with raw css
+                        rather than a framework like bootstrap. This should keep
+                        frontend updates extremely minimal and keeps deployment
+                        simple.</p>
+                    <p>I intend to add the
+                        following features:</p>
                     <ul>
-                        <li><a href="sls-portfolio">Serverless Portfolio</a></li>
-                        <li><a href="home-network">Home Network</a></li>
-                        <li><a href="iot-temperature-sensor">IoT Temperature
-                            Sensor</a></li>
+                        <li>Deployment through Github Actions. It's a pretty
+                            simple s3 sync and terraform apply - Github Actions
+                            can do this for me.</li>
+                        <li>A contact form. Submission will hit an API gateway
+                            endpoint that will call SES to send me an email with
+                            the contents.</li>
+                        <li>Use Dynamodb and S3 to store project data. Long term
+                            I want the ability to add projects to the site
+                            without updating html files every time. I also want
+                            the ability to add pictures and potentially other
+                            files. This will require a public API endpoint for
+                            retrieving project data.</li>
                     </ul>
+                    <h3>Home Network</h3>
+                    <p>tbd</p>
+                    <h3>IoT Temperature
+                        Sensor</h3>
+                    <p>tbd</p>
                 </div>
             </div>
+        </div>
+        <footer>
             <h2>Contact</h2>
             <p>LinkedIn:
                 <a
-                    href="https://www.linkedin.com/in/jeff-cave-jr-0b1b1b1b1/">Jeff
+                    href="https://www.linkedin.com/in/jeffrey-cave/">Jeff
                     Cave Jr</a>
             </p>
             <p>GitHub:
@@ -58,7 +86,6 @@
             <p>X:
                 <a href="https://x.com/jcaveman13">jcavejr</a>
             </p>
-
-        </div>
+        </footer>
     </body>
 </html>
