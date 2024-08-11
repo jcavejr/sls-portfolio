@@ -1,0 +1,77 @@
+/* styles.css */
+@font-face {
+    font-family: 'nunito';
+    src: url(nunito-sans.ttf);
+}
+/* Reset default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    font-family: nunito, sans-serif;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Create grid container */
+.container {
+    display: flex;
+    grid-template-rows: [header-start] 100px [content-start] auto [content-end footer-start] 100px [footer-end];
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+/* Footer */
